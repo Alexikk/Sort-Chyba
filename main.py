@@ -46,7 +46,7 @@ def selection_sort(arrays):
             if arrays[j] < arrays[min_index]:
                 min_index = j
         arrays[i], arrays[min_index] = arrays[min_index], arrays[i]
-        print(f"Krok {i + 1}: {arrays}")
+        print(f"Pokus {i + 1}: {arrays}")
     return arrays
 
 print("Selection sort:", selection_sort(arrays))
@@ -57,16 +57,15 @@ arrayi = [47, 24, 17, 45, 19, 13, 29, 58, 6, 32]
 
 def insertion_sort(arrayi):
     for i in range(1, len(arrayi)):
-        key = arrayi[i]
+        vlozena_hodnota = arrayi[i]
         j = i - 1
-        while j >= 0 and key < arrayi[j]:
+        while j >= 0 and vlozena_hodnota < arrayi[j]:
             arrayi[j + 1] = arrayi[j]
             j -= 1
-        arrayi[j + 1] = key
-        print(f"Krok {i}: {arrayi}")
+        arrayi[j + 1] = vlozena_hodnota
+        print(f"Pokus {i}: {arrayi}")
     return arrayi
 
 print("Insertion sort:", insertion_sort(arrayi))
-
 
 
