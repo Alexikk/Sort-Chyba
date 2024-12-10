@@ -1,6 +1,11 @@
-import random
+import random 
 
-# 1, Bubble sort
+# 1, pole s 10 přeházenými hodnotami od 0-100
+pole = random.sample(range(101), 10)    #random.sample vybere 10 náhodných hodnot z rozsahu
+
+print("Pole s náhodnými hodnotami:", pole)
+
+# 2, Bubble sort
 array = [22, 66, 94, 69, 1, 99, 6, 14, 88, 3]
 
 def bubble_sort():
@@ -14,7 +19,7 @@ def bubble_sort():
 
 print("Bubble sort:", bubble_sort())
 
-# 2, Bogo sort
+# 3, Bogo sort
 arrayb = [86, 62, 6, 79, 21, 14, 2, 70, 37, 28]
 
 def is_sorted(arrayb):
@@ -35,7 +40,7 @@ def bogosort(arrayb):
 print("Bogo sort:", bogosort(arrayb))
 
 
-# 3, Selection sort
+# 4, Selection sort
 arrays = [58, 31, 23, 9, 18, 13, 67, 89, 5, 72]
 
 def selection_sort(arrays):
@@ -52,7 +57,7 @@ def selection_sort(arrays):
 print("Selection sort:", selection_sort(arrays))
 
 
-# 4, Insertion sort
+# 5, Insertion sort
 arrayi = [47, 24, 17, 45, 19, 13, 29, 58, 6, 32]
 
 def insertion_sort(arrayi):
